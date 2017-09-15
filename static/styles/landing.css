@@ -1,0 +1,140 @@
+.map{
+
+   	height: -webkit-calc(100% - 30px);
+	height: -moz-calc(100% - 30px);
+	height: calc(100% - 30px);
+    border: 2px solid black;
+
+    width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: calc(100% - 20px);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.left_body{
+	position: relative;
+    width: -webkit-calc(100% - 300px);
+	width: -moz-calc(100% - 300px);
+	width: calc(100% - 300px);
+    height:100%;
+
+}
+
+.sensor_info{
+	display: none;
+    position: absolute;
+    top:40px;
+    left:60px;
+    max-height: -webkit-calc(100% - 180px);
+	max-height: -moz-calc(100% - 180px);
+	max-height: calc(100% - 180px);
+    background: white;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.sensor_info.no_graphs{
+    width:200px;
+
+}
+
+.sensor_info.graphs{
+
+	width: -webkit-calc(100% - 120px);
+	width: -moz-calc(100% - 120px);
+	width: calc(100% - 120px);
+	height: -webkit-calc(100% - 180px);
+	height: -moz-calc(100% - 180px);
+	height: calc(100% - 180px);
+}
+
+.sensor_info_header_bar{
+	background: black;
+	color: white;
+	height:30px;
+	line-height: 30px;
+	padding-left: 15px;
+}
+
+.info_panel{
+
+	padding: 10px;
+	width:180px;
+	float: left;
+}
+
+.graph_button_panel{
+	padding: 10px;
+	width:180px;
+	float: left;
+	display: none;
+
+}
+
+.graph_panel{
+	float: left;
+	width: -webkit-calc(100% - 400px);
+	width: -moz-calc(100% - 400px);
+	width: calc(100% - 400px);
+		height: -webkit-calc(100% - 30px);
+	height: -moz-calc(100% - 30px);
+	height: calc(100% - 30px);
+
+}
+
+.sensor_highcharts_panel{
+		width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: calc(100% - 20px);
+		height: -webkit-calc(100% - 20px);
+	height: -moz-calc(100% - 20px);
+	height: calc(100% - 20px);
+
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+
+.close_button{
+	position: absolute;
+	top:4px;
+	background: white;
+	right:4px;
+	width:22px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+	cursor: pointer;
+}
+
+.graph_button_panel .btn{
+
+	margin-bottom: 10px;
+
+}
+
+#sensor_latest_time{
+	margin-left: 10px;
+
+}
+
+.map_cover{
+	top:0px;
+	left: 10px;
+	position: absolute;
+	height: -webkit-calc(100% - 26px);
+	height: -moz-calc(100% - 26px);
+	height: calc(100% - 26px);
+    background: url("/static/images/loading.gif") ;
+background-size: cover;
+	opacity: 0.5;
+    width: -webkit-calc(100% - 18px);
+	width: -moz-calc(100% - 18px);
+	width: calc(100% - 18px);
+
+}

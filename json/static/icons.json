@@ -1,0 +1,10 @@
+{
+  "Weather":{
+        "sel":"/static/markers/test_marker_weather_sel.svg",
+        "normal":"/static/markers/test_marker_weather.svg"
+    },
+    "Air Quality": {
+        "sel": "/static/markers/test_marker_aq_sel.svg",
+        "normal": "/static/markers/test_marker_aq.svg"
+    }
+}

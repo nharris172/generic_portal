@@ -1,0 +1,18 @@
+{
+  "NO2":{
+    "graph_type":"line",
+    "units":"ppb"
+  },
+    "NO":{
+    "graph_type":"line",
+    "units":"ppb"
+  },
+    "Temperature":{
+    "graph_type":"line",
+    "units":"C"
+  },
+    "Humidity":{
+    "graph_type":"line",
+    "units":"%"
+  }
+}

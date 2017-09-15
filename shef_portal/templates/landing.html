@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block html_header %}
+<link rel="stylesheet" href="/static/styles/landing.css">
+    <link rel="stylesheet" href="/static/ol/ol.css">
+
+    <script src="/static/ol/ol.js"></script>
+    <script src="/static/highcharts/highcharts.js"></script>
+    <script src="/static/js/landing.js"></script>
+{%  endblock %}
+
+{% block body %}
+    <div class="left_body">
+        <div id="map" class="map"></div>
+        <div class="map_cover"></div>
+        <div class="sensor_info no_graphs">
+            <div class="sensor_info_header_bar">
+
+
+            </div>
+            <div class="close_button" onclick="unselect_features()">X</div>
+            <div class="info_panel">
+                <input type="hidden" id="selected_sensor" value="">
+                <b>Time of last recording:</b><br>
+                <div id="sensor_latest_time"></div>
+                <div style="height:8px;"></div>
+                <b>Live readings:</b><br>
+                <table id="sensor_reading_table">
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="btn"  onclick="show_graphs(this.getAttribute('sensor_name'))" id="graph_exploder_button">Show Graph</div>
+
+
+            </div>
+            <div class="graph_button_panel">
+
+
+            </div>
+            <div class="graph_panel">
+                <div class="sensor_highcharts_panel"></div>
+
+            </div>
+        </div>
+    </div>
+{%  endblock %}
